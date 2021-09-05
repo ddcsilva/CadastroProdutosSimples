@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CadastroProdutos.Application\CadastroProdutos.Application.csproj" />
+    <ProjectReference Include="..\CadastroProdutos.Domain\CadastroProdutos.Domain.csproj" />
+    <ProjectReference Include="..\CadastroProdutos.Infra.Data\CadastroProdutos.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
