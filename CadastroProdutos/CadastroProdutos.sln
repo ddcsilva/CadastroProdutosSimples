@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroProdutos.Infra.IoC"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroProdutos.WebUI", "CadastroProdutos.WebUI\CadastroProdutos.WebUI.csproj", "{FBC441FA-12C7-4A47-B97A-A29B6F2D4D44}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroProdutos.Domain.Tests", "CadastroProdutos.Domain.Tests\CadastroProdutos.Domain.Tests.csproj", "{3EFCC0A2-AC12-4F4E-B367-261728A8A770}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FBC441FA-12C7-4A47-B97A-A29B6F2D4D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBC441FA-12C7-4A47-B97A-A29B6F2D4D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBC441FA-12C7-4A47-B97A-A29B6F2D4D44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EFCC0A2-AC12-4F4E-B367-261728A8A770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EFCC0A2-AC12-4F4E-B367-261728A8A770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EFCC0A2-AC12-4F4E-B367-261728A8A770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EFCC0A2-AC12-4F4E-B367-261728A8A770}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
