@@ -60,6 +60,13 @@ namespace CadastroProdutos.Domain.Tests
         }
 
         [Fact]
+        public void CreateProduct_WithNullImageName_NoNullReferenceException()
+        {
+            Action action = () => new Produto(1, "Product Name", "Product Description", 9.99m, 99, null);
+            action.Should().NotThrow<NullReferenceException>();
+        }
+
+        [Fact]
         public void CreateProduct_InvalidPriceValue_DomainException()
         {
             Action action = () => new Produto(1, "Product Name", "Product Description", -9.99m,

@@ -39,15 +39,11 @@ namespace CadastroProdutos.Domain
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(nome), "Propriedade 'Nome' é obrigatório.");
             DomainExceptionValidation.When(nome.Length < 3, "Atributo 'Nome' inválido. É obrigatório no mínimo 3 caracteres.");
-            
             DomainExceptionValidation.When(string.IsNullOrEmpty(descricao), "Atributo 'Descricao' é obrigatório.");
             DomainExceptionValidation.When(descricao.Length < 5, "Propriedade 'Descricao' inválido. É obrigatório no mínimo 3 caracteres.");
-
             DomainExceptionValidation.When(preco < 0, "Propriedade 'Preco' inválido.");
-
             DomainExceptionValidation.When(quantidadeEstoque < 0, "Propriedade 'QuantidadeEstoque' inválido.");
-
-            DomainExceptionValidation.When(imagem.Length > 250, "Propriedade 'Imagem' inválido. Máximo de 250 caracteres excedido.");
+            DomainExceptionValidation.When(imagem?.Length > 250, "Propriedade 'Imagem' inválido. Máximo de 250 caracteres excedido.");
 
             Nome = nome;
             Descricao = descricao;
